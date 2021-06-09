@@ -20,8 +20,7 @@ public class YlogController {
 
     @GetMapping("/test/{id}")
     @YLogNote(type = LogType.SELECT)
-    public String test(@PathVariable("id")Integer id,
-                       @RequestParam("name")String name){
+    public String test(@PathVariable("id")Integer id){
         System.out.println(id);
         return "success";
     }

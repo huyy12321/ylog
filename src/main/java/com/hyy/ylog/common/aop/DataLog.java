@@ -65,7 +65,8 @@ public class DataLog {
                 ylog.setUseTime(end-start);
                 ylog.setCreateTime(new Date());
                 ylog.setType(request.getMethod());
-                ylogService.save(ylog);
+//                ylogService.save(ylog);
+                System.out.println(ylog);
             } else{
                 proceed = point.proceed();
             }
